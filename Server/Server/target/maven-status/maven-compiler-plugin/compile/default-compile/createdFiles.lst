@@ -1,0 +1,14 @@
+database\dao\ParticipateDao.class
+database\model\ParticipateEntity.class
+database\dao\StageDao.class
+ServerLogic\Handler.class
+database\model\enums\Role.class
+database\model\UserEntity.class
+database\model\StageEntity.class
+database\model\TeamEntity.class
+database\model\util\RoleConverter.class
+database\dao\DaoI.class
+database\dao\TeamDao.class
+database\DatabaseConnection.class
+Server.class
+database\dao\UserDao.class
