@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminMenuController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="1000.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is the admin panel" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutY="40.0" prefHeight="560.0" prefWidth="221.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="779.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="208.0" prefWidth="278.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="145.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_username" prefHeight="25.0" prefWidth="112.0" promptText="username" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="24.0" prefWidth="205.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="19.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_password" prefHeight="8.0" prefWidth="112.0" promptText="password" />
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="35.0" prefHeight="25.0" prefWidth="205.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First name">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_first_name" prefHeight="8.0" prefWidth="112.0" promptText="first name" />
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="25.0" prefWidth="205.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Second name" wrappingWidth="92.6201171875">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_second_name" prefHeight="8.0" prefWidth="112.0" promptText="second name" />
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="95.0" prefHeight="25.0" prefWidth="360.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Role">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_role" prefHeight="8.0" prefWidth="112.0" promptText="PARTICIPANT" text="PARTICIPANT">
+                           <HBox.margin>
+                              <Insets left="54.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="125.0" prefHeight="25.0" prefWidth="205.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_team" prefHeight="8.0" prefWidth="112.0" promptText="Team">
+                           <HBox.margin>
+                              <Insets left="45.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Button fx:id="create_user_button" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onCreateUserClicked" style="-fx-background-color: #aeb6bf;" text="Create User">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="208.0" prefWidth="398.0">
+               <children>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="145.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stage name">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_stage_name" prefHeight="25.0" prefWidth="112.0" promptText="stage name" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="create_stage_button1" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#onCreateStageClicked" style="-fx-background-color: #aeb6bf;" text="Create Stage">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Separator>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="179.0" prefWidth="322.0">
+               <children>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="145.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team name">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="tf_team_name" prefHeight="25.0" prefWidth="112.0" promptText="team name" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="create_team_button" alignment="TOP_RIGHT" mnemonicParsing="false" onMouseClicked="#onCreateTeamClicked" style="-fx-background-color: #aeb6bf;" text="Create Team">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Text layoutX="253.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of users:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="list_users" layoutX="250.0" layoutY="73.0" prefHeight="200.0" prefWidth="229.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="104.800048828125" text="Username">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></TableColumn>
+          <TableColumn fx:id="team" prefWidth="123.0" text="Team">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></TableColumn>
+        </columns>
+      </TableView>
+      <Text layoutX="500.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of stages:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="stages_list" layoutX="500.0" layoutY="73.0" prefHeight="200.0" prefWidth="171.0" />
+      <ListView fx:id="teams_list" layoutX="691.0" layoutY="73.0" prefHeight="200.0" prefWidth="171.0" />
+      <Text layoutX="691.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of teams:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="create_game_button" alignment="CENTER" layoutX="436.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#onCreateGameClicked" style="-fx-background-color: #00FF00;" text="Create Game">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button1" alignment="CENTER" layoutX="250.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onDeleteUserClicked" style="-fx-background-color: #DC143C;" text="Delete row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button11" alignment="CENTER" layoutX="408.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onEditUserClicked" style="-fx-background-color: #aeb6bf;" text="Edit row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button12" alignment="CENTER" layoutX="500.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onDeleteStageClicked" style="-fx-background-color: #DC143C;" text="Delete row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button111" alignment="CENTER" layoutX="602.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onEditStageClicked" style="-fx-background-color: #aeb6bf;" text="Edit row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button121" alignment="CENTER" layoutX="691.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onDeleteTeamClicked" style="-fx-background-color: #DC143C;" text="Delete row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="create_game_button1111" alignment="CENTER" layoutX="791.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#onEditTeamClicked" style="-fx-background-color: #aeb6bf;" text="Edit row">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Separator layoutX="233.0" layoutY="327.0" prefWidth="767.0" />
+      <Separator layoutX="230.0" layoutY="-27.0" orientation="VERTICAL" prefHeight="629.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

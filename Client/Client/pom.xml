@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Client-side</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--JavaFX -->
+    <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.1</version>
+        </dependency>
+
+    <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>1.0.2</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>org.eclipse.persistence.jpa</artifactId>
+        <version>RELEASE</version>
+    </dependency>
+
+    <!-- Eclipse Link -->
+    <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>eclipselink</artifactId>
+        <version>3.0.2</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>javax.persistence</artifactId>
+        <version>2.2.0</version>
+    </dependency>
+
+    <!-- Postgres -->
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>9.3-1102-jdbc41</version>
+    </dependency>
+
+    </dependencies>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+            <configuration>
+                <source>8</source>
+                <target>8</target>
+            </configuration>
+        </plugin>
+
+        <plugin>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>0.0.8</version>
+            <configuration>
+                <executable>F:\jdk-17.0.2\bin\Java</executable>
+                <mainClass>Main</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
+
+</project>

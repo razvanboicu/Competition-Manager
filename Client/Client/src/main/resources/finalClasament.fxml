@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.finalClasamentController">
+   <children>
+      <TableView fx:id="list_users" prefHeight="400.0" prefWidth="296.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="148.0" text="Username" />
+          <TableColumn fx:id="userscore" minWidth="0.0" prefWidth="147.20001220703125" text="Score" />
+        </columns>
+      </TableView>
+      <TableView fx:id="list_team" layoutX="296.0" prefHeight="400.0" prefWidth="296.0">
+         <columns>
+            <TableColumn fx:id="team" prefWidth="148.0" text="Team" />
+            <TableColumn fx:id="teamscore" minWidth="0.0" prefWidth="147.20001220703125" text="Score" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
