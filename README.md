@@ -1,10 +1,14 @@
 # competition-project
-Competiton project for educational purposes 
 
-La o competitie participa competitori. Fiecare competitor face parte dintr-o echipa (una si doar una).
-O echipa poate avea intre minim 2 si maxim 5 competitori. Administratorul competitiilor planifica etapele (la fiecare etapa participa competitori, nu echipe).
-La incheierea fiecarei etape, competitorii participanti isi inregistreaza un scor (care nu este obligatoriu sa fie unic fata de restul participantilor din etapa). Doar competitorul isi poate inregistra propriul scor (nu si administratorul) si nu poate fi modificat.
-O etapa este considerata incheiata dupa ce toti competitorii inscrisi isi trec scorul aferent.
-Administratorul poate comunica candidatilor care nu si-au inscris scorul sa faca acest lucru.
-Fiecare competitor, dar si administratorul, pot vedea clasamentul dupa etapele deja incheiate (cele care au inregistrare toate scorurile), individual si pe echipe. Intr-o etapa locul 1 primeste 10 puncte, locul 2, 6 puncte, locul 3, 3 puncte, locul 4, un punct.
-In cazul in care sunt mai multi competitori sunt pe acelasi loc fiecare va primi, media aritmetica a punctajului cumulat aferent locurilor.
+<b> A multi-client application that allows the management of any kind of competition. </b>
+
+Competitors participate in a competition. Each competitor is part of a team (one and only one). <br>
+A team can have between a minimum of 2 and a maximum of 5 competitors. <br>
+The competition administrator plans the stages (each stage is attended by competitors, not teams). <br>
+At the end of each stage, the participating competitors register a score (which does not have to be unique compared to the rest of the participants in the stage).<br>
+Only the competitor can register his own score (not the administrator) and cannot be modified. <br>
+A stage is considered completed after all registered competitors pass the corresponding score. <br>
+The administrator can communicate to the candidates who did not register their score to do so. <br>
+Each competitor, but also the administrator, can see the ranking according to the stages already completed (those that have all the scores), individually and in teams. <br>
+If there are several competitors on the same place, each one will receive the arithmetic mean of the cumulative score for the places. <br>
+
