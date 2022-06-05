@@ -1,5 +1,9 @@
 # Competition-project
 
+![manageJava](https://user-images.githubusercontent.com/95618244/172048371-2db1c09c-6c8a-4f2b-acae-18f9ce80ae53.png)
+
+
+
 <b> A multi-client application that allows the management of any kind of competition. </b>
 
 ## Short-description
