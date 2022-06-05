@@ -1,6 +1,8 @@
-# competition-project
+# Competition-project
 
 <b> A multi-client application that allows the management of any kind of competition. </b>
+
+## Short-description
 
 Competitors participate in a competition. Each competitor is part of a team (one and only one). <br>
 A team can have between a minimum of 2 and a maximum of 5 competitors. <br>
