@@ -1,4 +1,4 @@
-![manageJava](https://user-images.githubusercontent.com/95618244/172048417-6ba71304-43f4-474e-8ad1-d69227ad75a6.png)
+![manageJava](https://user-images.githubusercontent.com/95618244/172048569-34313478-f971-4202-8255-8109ca34a402.png)
 
 # Competition-project
 <b> A multi-client application that allows the management of any kind of competition. </b>
